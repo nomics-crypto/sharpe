@@ -21,6 +21,16 @@ Then:
 
 **In both cases you are expected to spend 1-1.5 hours on this challenge**. Code quality is far more important than the amount of the challenge you are able to complete. We have deliberately included more than we expect you can complete in the time alotted. Please don't try to do it all, just get through what you can and focus on your code quality.
 
+## Rules
+
+Whether you are taking this home or pairing in-person, we have a short list of rules you must follow:
+
+1. You **may** use any online or offline resource, google, stackoverflow, docs, books, etc.
+1. You **may not** get direct help or code from anyone
+1. All the code you submit as part of the interview must be written by you
+1. You **may** use any existing public library or nodejs package
+1. You **may** ask your interviewer any question you'd like, it's up to them to decide to answer, and this doesn't count against you in any way. Please ask about anything you find unclear, it will help us make this challenge better.
+
 ## Challenge: Computing Sharpe Ratios for Crytoassets
 
 > In finance, the Sharpe ratio (also known as the Sharpe index, the Sharpe measure, and the reward-to-variability ratio) is a way to examine the performance of an investment by adjusting for its risk. The ratio measures the excess return (or risk premium) per unit of deviation in an investment asset or a trading strategy, typically referred to as risk, named after William F. Sharpe.
