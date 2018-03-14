@@ -88,3 +88,10 @@ Here are the steps we'd like you to take towards building your app. Remember you
 1. Show the total return for the asset, average daily return, and standard deviation of the return in the table for each asset and make the table sortable by those fields too
 
 Every step of the way we expect you to test and refactor your code, make it look good!
+
+## App Usage
+
+This app was built with `create-react-app` and comes with a bunch of handy scripts. Check out `package.json` for all the details. Mainly you'll be using:
+
+* `yarn test` to run your tests
+* `yarn start` to view your app in a browser
