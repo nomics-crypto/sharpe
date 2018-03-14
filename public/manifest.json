@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Sharpe Ratio",
+  "name": "Nomics Front-End Engineering Challenge: Sharpe Ratios",
   "icons": [
     {
       "src": "favicon.ico",
