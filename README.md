@@ -51,25 +51,26 @@ S = A / D
 const sharpe = math.mean(returns) / math.std(returns);
 ```
 
-All we need are the returns, and that's where the Nomics API comes in. We will be using an unofficial API endpoint (because the official API isn't complete yet):
+All we need are the returns, and that's where the Nomics API comes in. We can use the Currencies Sparkline endpoint to get the daily prices of all the currencies Nomics supports all in one request:
 
-https://api.nomics.com/v0/sparkline
+https://docs.nomics.com/#operation/getCurrenciesSparkline
 
 The format for the response looks like this:
 
 ```json
-{
-  "day": [{"currency":"1ST","timestamps":["2018-03-13T14:00:00Z",...],"closes":["0.19319",...]},...],
-  "week": [{"currency":"1ST","timestamps":["2018-03-08T00:00:00Z",...],"closes":["0.24150",...]},...],
-  "month": [{"currency":"1ST","timestamps":["2018-02-13T00:00:00Z",...],"closes":["0.49572",...]},...],
-  "year": [{"currency":"1ST","timestamps":["2017-05-08T00:00:00Z",...],"closes":["0.55635",...]},...],
-}
+[
+  {
+    "currency": "BTC",
+    "timestamps": ["2018-04-14T00:00:00Z",...],
+    "prices": ["0.18908",...]
+  }
+]
 ```
 
-Using the `year` field, we have an array of currency objects with timestamps and close prices for each day for the past year (or as far back as Nomics has data for that currency). The daily return is the difference in price divided by the starting price, like this:
+The daily return is the difference in price divided by the starting price, like this:
 
 ```js
-returns[1] = (price[1] - price[0]) / price[0];
+returns[3] = (price[3] - price[2]) / price[3];
 ```
 
 So, the return for a given day is that day's price minus the day before's price divided by the day before's price. If today the price is $100, and yesterday it was $80, the return is `($100-$80)/$80 = 0.25 = 25%`.
