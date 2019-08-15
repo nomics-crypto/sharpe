@@ -2,28 +2,13 @@
 
 Hello, and welcome to the Nomics Front-End Engineer technical interview coding challenge!
 
-There are two ways to take this challenge, and there's no advantage either way. We recognize that developers work in different ways and are more comfortable with some situations, while others may make them anxious. We also understand that developers come from all walks of life and have different constraints around their time. We want to see how you code when you're at your best, so choose what works best for you.
+This is a take-home challenge and should be completed on your own and then presented to your interviewer (like a live code review). Once complete, you can submit your challenge and set up a time to share your solution _at least one day ahead of time_. Your code can be submitted via public link, a shared private repo, or emailed in an archive.
 
-Choose one of these methods:
-
-1. **In-person pairing**: work on this code challenge while pairing with your interviewer
-2. **Take-home**: work on this code challenge on your own, then present it to your interviewer (like a live code review)
-
-Then:
-
-1. Set up a time to pair on it with your interviewer, or:
-2. Set up a time to show your solution to your interviewer
-
-Then:
-
-1. Read over the code challenge so you're familiar with what you'll be working on, or:
-2. Work on the code challenge on your own, then send your solution to your interviewer *at least one day ahead of time* (public link, shared private repo, or emailing an archive are all ok)
-
-**In both cases you are expected to spend 1-1.5 hours on this challenge**. Code quality is far more important than the amount of the challenge you are able to complete. We have deliberately included more than we expect you can complete in the time alotted. Please don't try to do it all, just get through what you can and focus on your code quality.
+**You are expected to spend 1-1.5 hours on this challenge**. Code quality is far more important than the amount of the challenge you are able to complete. We have deliberately included more than we expect you can complete in the time allotted. Please don't try to do it all, just get through what you can and focus on your code quality.
 
 ## Rules
 
-Whether you are taking this home or pairing in-person, we have a short list of rules you must follow:
+Here is the short list of rules you must follow:
 
 1. You **may** use any online or offline resource, google, stackoverflow, docs, books, etc.
 1. You **may not** get direct help or code from anyone
@@ -81,6 +66,7 @@ We're ready to get started!
 
 Here are the steps we'd like you to take towards building your app. Remember you don't need to finish (and we don't expect you to), we care more about the quality of the code you write than how far you get.
 
+1. Setup a React App to run and output the visual parts of your work for the web
 1. Write code that takes an array of returns and returns the Sharpe Ratio
 1. Write code that fetches data from the Nomics Sparkline API and returns currencies with their daily returns over the past year
 1. Write code that uses those two functions to return currencies with their Sharpe Ratios
@@ -88,11 +74,12 @@ Here are the steps we'd like you to take towards building your app. Remember you
 1. Make the table sortable by currency symbol or Sharpe Ratio
 1. Show the total return for the asset, average daily return, and standard deviation of the return in the table for each asset and make the table sortable by those fields too
 
-Every step of the way we expect you to test and refactor your code, make it look good!
+Every step of the way we expect you to test and refactor your code. Make it look good!
 
-## App Usage
+## Getting Started
 
-This app was built with `create-react-app` and comes with a bunch of handy scripts. Check out `package.json` for all the details. Mainly you'll be using:
+The code should be written in JavaScript and use the React framework. You can set this up any way you would like, but a good starting point is to use [Create React App](https://github.com/facebook/create-react-app):
 
-* `yarn test` to run your tests
-* `yarn start` to view your app in a browser
+```sh
+npx create-react-app sharpe-challenge
+```
